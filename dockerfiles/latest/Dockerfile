@@ -10,7 +10,7 @@ RUN git clone --depth=1 https://github.com/beagle-dev/beagle-lib.git &&\
     cd beagle-lib  &&\
     ./autogen.sh &&\
     ./configure --prefix=$HOME &&\
-    make install && export LD_LIBRARY_PATH=$HOME/lib:$LD_LIBRARY_PATH
+    make install
     
 # Installing BEAST
 # https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
@@ -22,7 +22,9 @@ RUN curl -s https://api.github.com/repos/beast-dev/beast-mcmc/releases/latest \
 
 RUN tar -zxvf BEASTv*.tgz && mv BEAST*/ BEAST && rm BEAST*.tgz
 
-RUN export PATH=$PATH:$HOME/BEAST/bin/
+# Set paths
+ENV PATH="${PATH}:/BEAST/bin/"
+ENV LD_LIBRARY_PATH="/root/lib:${LD_LIBRARY_PATH}"
 
 # outsider *requires* working_dir
 RUN mkdir /working_dir

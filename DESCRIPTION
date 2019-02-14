@@ -7,7 +7,7 @@ Docker: dombennett
 Description: Install and run beast from within R.
 Encoding: UTF-8
 Depends:
-    R (>= 3.5.2)
+    R (>= 3.4.0)
 Imports:
     outsider
 RoxygenNote: 6.1.1
