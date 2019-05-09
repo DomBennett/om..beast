@@ -3,6 +3,8 @@ Type: Package
 Version: 1.0.0
 Title: Outsider module for running beast
 Description: Install and run beast from within R.
+Author: Dom Bennett <dominic.john.bennett@gmail.com>
+License: MIT + file LICENSE
 Encoding: UTF-8
 Depends:
     R (>= 3.4.0)
