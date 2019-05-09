@@ -1,2 +1,5 @@
 program: beast
 details: Bayesian Evolutionary Analysis Sampling Trees
+docker: dombennett
+github: dombennett
+url: https://github.com/DomBennett/om..beast

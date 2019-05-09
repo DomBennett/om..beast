@@ -1,4 +1,4 @@
-Package: om..beast..dombennett
+Package: om..beast
 Type: Package
 Version: 1.0.0
 Title: Outsider module for running beast
@@ -9,5 +9,7 @@ Encoding: UTF-8
 Depends:
     R (>= 3.4.0)
 Imports:
+    outsider.base
+Suggests:
     outsider
 RoxygenNote: 6.1.1
