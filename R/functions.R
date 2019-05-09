@@ -2,7 +2,7 @@
 #' @title beast
 #' @description Run beast
 #' @param ... Arguments
-#' @example /examples/example.R
+#' @example /examples/beast.R
 #' @export
 beast <- function(...) {
   arglist <- arglist_get(...)
