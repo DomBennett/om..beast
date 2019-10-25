@@ -1,4 +1,4 @@
-# Run `beast` with `outsider` in R
+# Run [`beast`](https://beast.community/) with `outsider` in R
 [![Build Status](https://travis-ci.org/dombennett/om..beast.svg?branch=master)](https://travis-ci.org/dombennett/om..beast)
 
 
